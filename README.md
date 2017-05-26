@@ -1,4 +1,19 @@
 # Meteor Sendgrid Email Autoresponder Client
+
+<table>
+  <tbody>
+    <tr>
+      <th>Node Version</th>
+      <td>v6.9.4</td>
+    </tr>
+    <tr>
+      <th>Meteor Version</th>
+      <td>v1.4.4.2</td>
+    </tr>
+  </tbody>
+</table>
+
+
 Email Sending Client &amp; Autoresponder (SendGrid) built with Meteor / NodeJs. This app doesn't have any frontend / client code. The autoresponder is based on a well designed template from [Litmus free transactional email templates.](https://litmus.com/community/templates). You can add/edit templates inside the ```/private``` folder, using ```{{variablename}}``` to replace the content.
 
 
@@ -57,8 +72,7 @@ $ meteor npm install
 $ npm start
 ```
 
-Meteor v1.4.4.2
-Node v6
+
 
 ### Deployment
 
