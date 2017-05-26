@@ -7,9 +7,14 @@
         },
         "config": {
           "emailTo": "youremail@company.com",
-          "subject": "Website Contact Form"
+          "subject": "Website Contact Form",
+          "apikey": "test",
+          "origins": ["http://localhost"]
+
         },
         "autoresponder": {
+          "websiteurl": "https://example.com",
+          "logourl": "https://example.com/logo.png",
           "from": "Your Company Name",
           "fromEmail": "info@company.com",
           "subject": "Thanks for getting in touch",

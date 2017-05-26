@@ -6,7 +6,7 @@ The app exposes an API endpoint at ```/email``` that accepts an object (send usi
 ```
 {
   email: 'somebody@gmail.com',
-  name: 'Jack',
+  firstname: 'Jack',
   message: 'Hi'
 }
 ```
@@ -20,9 +20,7 @@ Rename ```settings-example.json``` to ```settings.json``` and enter your details
 
 ```sh
 {
-    "public"     : {
-
-    },
+    "public"     : {},
     "private"    : {
         "sendgrid": {
           "username": "youremail@gmail.com",
@@ -30,9 +28,13 @@ Rename ```settings-example.json``` to ```settings.json``` and enter your details
         },
         "config": {
           "emailTo": "youremail@company.com",
-          "subject": "Website Contact Form"
+          "subject": "Website Contact Form",
+          "apikey": "xxxxxxx",
+          "origins": ["http://localhost"]
         },
         "autoresponder": {
+          "websiteurl": "https://example.com",
+          "logourl": "https://example.com/logo.png",
           "from": "Your Company Name",
           "fromEmail": "info@company.com",
           "subject": "Thanks for getting in touch",
@@ -46,6 +48,7 @@ Rename ```settings-example.json``` to ```settings.json``` and enter your details
 
     }
 }
+
 ```
 
 ```sh
@@ -62,7 +65,3 @@ Deploy to your VPS using [Kadira: MeteorUp](https://github.com/kadirahq/meteor-u
 ### Todo
 
  - Remove all own branding from Templates (make 100% generic)
-
-
-### Sample
- ![Email Autoresponder Example](https://s29.postimg.org/7dqyksrcn/email_Autoresponder.png)
