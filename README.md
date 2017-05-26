@@ -14,10 +14,14 @@
 </table>
 
 
-Email Sending Client &amp; Autoresponder (SendGrid) built with Meteor / NodeJs. This app doesn't have any frontend / client code. The autoresponder is based on a well designed template from [Litmus free transactional email templates.](https://litmus.com/community/templates). You can add/edit templates inside the ```/private``` folder, using ```{{variablename}}``` to replace the content.
+Email Autoresponder client for SendGrid built with Meteor / NodeJs. This app doesn't have any client-side code. The autoresponder is based on a template from [Litmus free transactional email templates.](https://litmus.com/community/templates). You can add/edit templates inside the ```/private``` folder, using ```{{variablename}}``` to replace the content.
 
+```
+/server/api.js [ REST endpoint by *nimble:restivus* ]
+/server/smtp.js [ Transactional email & template config ]
+```
 
-The app exposes an API endpoint at ```/email``` that accepts an object (send using an HTML form from a static website):
+The app exposes an API endpoint at ```/email``` that accepts an object:
 ```
 {
   email: 'somebody@gmail.com',
@@ -27,7 +31,8 @@ The app exposes an API endpoint at ```/email``` that accepts an object (send usi
 ```
 
 
-Once the object is sent to the API endpoint, an email is dispatched to the app owners email, then an autoresponder is sent to the senders email.
+- Email sent to the app owners email
+- Autoresponder sent to the senders email
 
 ### Run
 
