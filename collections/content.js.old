@@ -1,0 +1,13 @@
+// Content = new Meteor.Collection('content');
+//
+// Content.allow({
+//     insert: () => true,
+//     update: () => true,
+//     remove: () => false
+// });
+//
+// Content.deny({
+//     insert: () => false,
+//     update: () => false,
+//     remove: () => true
+// });

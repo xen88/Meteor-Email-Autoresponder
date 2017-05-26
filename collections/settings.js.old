@@ -1,0 +1,13 @@
+// Settings = new Meteor.Collection('settings');
+//
+// Settings.allow({
+//     insert: () => true,
+//     update: () => true,
+//     remove: () => false
+// });
+//
+// Settings.deny({
+//     insert: () => false,
+//     update: () => false,
+//     remove: () => true
+// });

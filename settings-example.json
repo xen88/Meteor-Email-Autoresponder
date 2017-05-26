@@ -1,0 +1,25 @@
+{
+    "public"     : {},
+    "private"    : {
+        "sendgrid": {
+          "username": "youremail@gmail.com",
+          "apikey": "sendgrid-api-key"
+        },
+        "config": {
+          "emailTo": "youremail@company.com",
+          "subject": "Website Contact Form"
+        },
+        "autoresponder": {
+          "from": "Your Company Name",
+          "fromEmail": "info@company.com",
+          "subject": "Thanks for getting in touch",
+          "_body": {
+            "line_1": "Thanks for getting in touch!",
+            "line_2": "We will get back to you as soon as possible.",
+            "line_3": "We provide really amazing services.",
+            "address": "123 Startup Lane, Cape Town."
+          }
+        }
+
+    }
+}
