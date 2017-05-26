@@ -57,11 +57,9 @@ $ meteor npm install
 $ npm start
 ```
 
+Meteor v1.4.4.2
+Node v6
 
 ### Deployment
 
 Deploy to your VPS using [Kadira: MeteorUp](https://github.com/kadirahq/meteor-up)
-
-### Todo
-
- - Remove all own branding from Templates (make 100% generic)
